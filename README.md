@@ -8,6 +8,11 @@ This project aims to predict the spread of wildfires using deep learning models,
 •	The data is preprocessed by normalizing the features and padding the data to ensure consistent dimensions.
 •	Missing and infinite values are checked for and handled (though none were found in this case).
 •	The data is split into training and testing sets using train_test_split.
+
+![image](https://github.com/user-attachments/assets/c41c3de9-bae3-4dd9-95e1-d974a9562728)
+![image](https://github.com/user-attachments/assets/f0488027-3cc0-492c-9d13-a0de3ef92d3b)
+
+
 ## 3. Data Slicing
 •	The training and testing data is sliced into temporal sequences using a sliding window approach.
 •	This creates multiple input-output pairs for training the models.
@@ -15,10 +20,18 @@ This project aims to predict the spread of wildfires using deep learning models,
 •	Two models are implemented: a CNN model and an LSTM model.
 •	The models are compiled using the Adam optimizer and mean squared error (MSE) as the loss function.
 •	The models are trained on the sliced training data and validated on the sliced validation data.
+
+![image](https://github.com/user-attachments/assets/29183fa3-5525-499e-8026-c3f50f96d7a0)
+![image](https://github.com/user-attachments/assets/cf89df7c-b0b1-4c56-9e44-f77bf0d0117f)
+
 ## 5. Model Evaluation and Comparison
 •	The models are evaluated on the sliced test data using MSE and R-squared metrics.
 •	The results show that the CNN model outperforms the LSTM model in terms of both MSE and R-squared.
 •	Visualization of the training and validation loss is provided to assess the learning process.
+
+![image](https://github.com/user-attachments/assets/dc7ff8b7-0e01-42d4-b867-950a36e144e0)
+![image](https://github.com/user-attachments/assets/2aa7fa62-7270-4d79-848d-521370095355)
+
 ## 6. Conclusion
 •	The CNN model demonstrates better predictive accuracy for wildfire spread prediction compared to the LSTM model on the given dataset.
 •	The model can be further improved by exploring different architectures, hyperparameters, and data augmentation techniques.
